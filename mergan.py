@@ -211,6 +211,10 @@ def ps():
         print ('file not found')
         time.sleep(2)
         main()
+    print "Total IDS : "+str(len(idx))
+    print "----------------------------"
+    print " Cloning Start Please Wsit"
+    print "----------------------------"
         
     def main(arg):
         user=arg
