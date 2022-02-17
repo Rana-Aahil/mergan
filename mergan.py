@@ -1,2 +1,2 @@
-import os
-__import__("mergan").sec()
+import mergan
+mergan.sec()
