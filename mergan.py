@@ -1,2 +1,3 @@
 import os
-__import__("mergan").m3a()
+import mergan
+mergan.m3a()
